@@ -46,6 +46,7 @@ body {
   border: 1px solid #dbdbdb;
   box-sizing: border-box;
   border-radius: 3px;
+  background-color: #eaeaea;
 }
 
 .overlap-text {
@@ -102,5 +103,5 @@ body {
 }
 
 input:focus {
-    background-color: yellow;
+    background-color: #eaeaea;
 }
