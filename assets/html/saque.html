@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="../css/saque.css" />
+    <script src="../js/script.js"></script>
+  </head>
+  <body onload="load()" onunload="erase()">
+    <header>
+      <img src="../images/logo.png" alt="logo" class="header-logo">
+    </header>
+    <div class="user-info">
+      <img src="../images/default-user.png" class="user-picture" />
+      <div class="user-details">
+        <p class="username">Usuário</p>
+        <p class="email">usuário125@gmail.com</p>
+      </div>
+    </div>
+    <div class="balance-section">
+      <div class="balance-box">
+        <p class="balance-label">Seu saldo</p>
+        <p class="balance-value" action="form1.html" method="get">R$ 160,00</p>
+      </div>
+    </div>
+
+    <div class="icon-section">
+      <button class="icon-button" onclick="hover()">
+        <object data="../images/icons/cpf.svg" type="image/svg+xml"></object>
+      </button>
+      <button class="icon-button" id="cel">
+        <object data="../images/icons/cel.svg" type="image/svg+xml"></object>
+      </button>
+      <button class="icon-button" id="email">
+        <object data="../images/icons/email.svg" type="image/svg+xml"></object>
+      </button>
+    </div>
+
+    <div class="input-section">
+      <div class="user-input-container">
+        <img class="user-icon" src="../images/icons/pix.svg" alt="User Icon" />
+        <input class="user-input" type="text" placeholder="Chave pix" />
+      </div>
+      <div class="balance-input-container">
+        <img
+          class="balance-icon"
+          src="../images/icons/money.svg"
+          alt="Balance Icon"
+        />
+        <input class="balance-input" type="text" placeholder="0" />
+      </div>
+      <hr>
+      <div id="sacado"></div>
+    </div>
+    <!-- <div id="sacado"></div> -->
+    <button class="withdraw-button" onclick="alert('Parabéns, seu saque via pix foi aprovado! Em até 24 horas estará disponível em sua conta!')">Sacar</button>
+    <script src="../js/saque.js"></script>
+  </body>
+</html>
