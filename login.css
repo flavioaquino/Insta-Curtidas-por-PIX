@@ -99,6 +99,12 @@ body {
   font-family: 'Segoe UI';
 }
 
-input:focus {
-    background-color: #eaeaea;
+.btn:hover {
+  background-color: #1068ba; 
+  border-color: #1068ba;
+}
+
+input:hover {
+  background-color: #eaeaea; 
+  border-color: #eaeaea;
 }
